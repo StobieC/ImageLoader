@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_volume_off_grey_24dp.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/drawable/ic_volume_up_grey_24dp.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/drawable/mute.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/drawable/volume_on.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout/activity_full_screen_image.xml" value="0.2572463768115942" />
+        <entry key="app/src/main/res/layout/activity_items_loading_layout.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/pexels_image_itemview.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/pexels_item_view.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/pexels_video_itemview.xml" value="0.30572916666666666" />
+        <entry key="app/src/main/res/layout/view_error.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/viewholder_items_loading.xml" value="0.24427083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

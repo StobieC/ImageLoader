@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_error_icon_width">150dp</dimen>
+    <dimen name="view_error_text_margin_top">50dp</dimen>
+    <dimen name="view_error_icon_margin_top">200dp</dimen>
+</resources>

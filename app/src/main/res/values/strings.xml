@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pexels Demo</string>
+    <string name="main_activity_edit_text_hint">Please type something..</string>
+    <string name="main_activity_search_button">Search</string>
+    <string name="error_view_textview">Error</string>
+    <string name="photo_by_text">Photo by %1$s on Pexels</string>
+    <string name="video_by_text">Video by %1$s on Pexels</string>
+</resources>
