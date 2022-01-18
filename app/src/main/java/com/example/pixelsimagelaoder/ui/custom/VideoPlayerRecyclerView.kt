@@ -15,7 +15,6 @@ import android.widget.ProgressBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.bumptech.glide.RequestManager
 import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.source.ExtractorMediaSource
 import com.google.android.exoplayer2.source.MediaSource
@@ -64,7 +63,6 @@ class VideoPlayerRecyclerView : RecyclerView {
     private var screenDefaultHeight = 0
     private var playPosition = -1
     private var isVideoViewAdded = false
-    private var requestManager: RequestManager? = null
 
     private var volumeState: VolumeState? = null
 
