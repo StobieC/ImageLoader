@@ -1,6 +1,6 @@
 package com.example.pixelsimagelaoder.model
 
-data class PexelsWrapper(val videos: List<VideoResponse>,val page: Int)
+data class PexelsVideoWrapper(val videos: List<VideoResponse>,val page: Int)
 
 data class VideoResponse(
     val image: String,

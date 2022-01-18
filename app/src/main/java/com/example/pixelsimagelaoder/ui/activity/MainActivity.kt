@@ -2,6 +2,7 @@ package com.example.pixelsimagelaoder.ui.activity
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -18,7 +19,6 @@ import com.example.pixelsimagelaoder.viewmodel.State
 class MainActivity : AppCompatActivity() {
     private lateinit var pexelsAdapter: PexelsAdapter
     private lateinit var videoPlayerRecyclerView: VideoPlayerRecyclerView
-    private var input = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +28,10 @@ class MainActivity : AppCompatActivity() {
         searchButton.setOnClickListener {
             takeInputAndRenderViews(pexelsViewModel)
         }
-
     }
 
     private fun takeInputAndRenderViews(pexelsViewModel: PexelsViewModel) {
-        input = inputEditText.text.toString()
+        val input = inputEditText.text.toString()
         pexelsViewModel.getRemoteData(input)
             .observe(this@MainActivity,Observer { state ->
                 state?.let(::render)
@@ -48,7 +47,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun renderError() {
-        Log.d("SEARCH", "renderError")
+        Log.e("SEARCH", "renderError")
+        Toast.makeText(this.context, "Render Error", Toast.LENGTH_LONG).show()
     }
 
     private fun renderSuccess(mixedDataType: List<Any>) {
@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun renderLoading() {
         Log.d("SEARCH", "renderLoading")
+        Toast.makeText(this.context, "Loading", Toast.LENGTH_LONG).show()
     }
 
     private fun setRecyclerView(multipleData: List<Any>) {
